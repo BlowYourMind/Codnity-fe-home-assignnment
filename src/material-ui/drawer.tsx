@@ -38,8 +38,8 @@ export default function TemporaryDrawer() {
 
   return (
     <div className="block md:hidden">
-      <Button onClick={toggleDrawer(true)}>
-        <MenuIcon className="size-3.5" />
+      <Button className="px-2 !min-w-[unset]" onClick={toggleDrawer(true)}>
+        <MenuIcon className=" text-foreground size-3.5" />
       </Button>
       <Drawer open={open} onClose={toggleDrawer(false)} anchor="right">
         {DrawerList}

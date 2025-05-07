@@ -3,7 +3,7 @@ import { HeaderLinks } from "../interfaces/links";
 export const HEADER_LINKS: HeaderLinks = [
   {
     icon: <AnchorIcon className="size-3.5" />,
-    href: "/crypo",
+    href: "/crypto",
     public_name: "Crypto",
   },
   {
@@ -13,7 +13,7 @@ export const HEADER_LINKS: HeaderLinks = [
   },
   {
     icon: <AnchorIcon className="size-3.5" />,
-    href: "/contact",
+    href: "/contact-us",
     public_name: "Contact us",
   },
 ];

@@ -1,4 +1,4 @@
-function App() {
+function MainPageContent() {
   return (
     <div className="min-h-screen mt-40 max-w-5xl mx-auto">
       Main page content
@@ -6,4 +6,4 @@ function App() {
   );
 }
 
-export default App;
+export default MainPageContent;

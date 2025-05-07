@@ -8,7 +8,7 @@ module.exports = {
         secondaryBackground: "oklch(0.95 0.03 80)",
         foreground: "oklch(0.25 0.07 60)",
         "muted-foreground": "oklch(0.45 0.03 60)",
-        backgroundHover: "oklch(0.9 0.05 70)",
+        backgroundHover: "oklch(0.95 0.01 80)",
       },
     },
   },

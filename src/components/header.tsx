@@ -1,14 +1,24 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import TemporaryDrawer from "../material-ui/drawer";
 import Navbar from "./navbar";
+import { useState, useEffect } from "react";
 
 const Header = () => {
+  const [hasAnimatedIn, setHasAnimatedIn] = useState(() => {
+    return sessionStorage.getItem("headerAnimated") === "true";
+  });
+
+  useEffect(() => {
+    if (!hasAnimatedIn) {
+      setHasAnimatedIn(true);
+      sessionStorage.setItem("headerAnimated", "true");
+    }
+  }, [hasAnimatedIn]);
+
   return (
     <motion.header
-      className=" bg-secondaryBackground shadow-sm top-2 fixed inset-x-0 z-40 mx-auto flex h-14 max-w-5xl items-center justify-between rounded-2xl px-8 saturate-100 backdrop-blur-[10px]"
-      initial={{
-        y: -100,
-      }}
+      className="bg-secondaryBackground shadow-sm top-2 fixed inset-x-0 z-40 mx-auto flex h-14 max-w-5xl items-center justify-between rounded-2xl px-8 saturate-100 backdrop-blur-[10px]"
+      initial={!hasAnimatedIn ? { y: -100 } : false}
       animate={{
         y: 0,
       }}
@@ -30,4 +40,5 @@ const Header = () => {
     </motion.header>
   );
 };
+
 export default Header;
