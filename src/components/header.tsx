@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import TemporaryDrawer from "../material-ui/drawer";
 import Navbar from "./navbar";
 import { useState, useEffect } from "react";
+import AnimationsToggle from "./AnimationToggle";
 
 const Header = () => {
   const [hasAnimatedIn, setHasAnimatedIn] = useState(() => {
@@ -37,6 +38,7 @@ const Header = () => {
       </div>
       <Navbar />
       <TemporaryDrawer />
+      <AnimationsToggle />
     </motion.header>
   );
 };

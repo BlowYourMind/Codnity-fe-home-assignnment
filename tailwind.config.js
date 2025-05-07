@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "oklch(0.99 0.01 80)",
-        secondaryBackground: "oklch(0.95 0.03 80)",
-        foreground: "oklch(0.25 0.07 60)",
-        "muted-foreground": "oklch(0.45 0.03 60)",
-        backgroundHover: "oklch(0.95 0.01 80)",
+        background: "oklch(0.145 0.06 240)",
+        secondaryBackground: "oklch(0.145 0.06 240 / 0.3)",
+        foreground: "oklch(0.985 0.02 240)",
+        "muted-foreground": "oklch(0.708 0.06 240)",
+        backgroundHover: "oklch(0.7 0.15 240 / 0.3)",
       },
     },
   },
