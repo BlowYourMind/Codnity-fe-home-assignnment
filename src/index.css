@@ -1,9 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@theme {
-  --font-mono: var(--font-geist-mono);
+/* Your other global styles can go here */
+:root {
+  --font-geist-sans: "Geist Sans", monospace;
+  --font-geist-mono: "Geist", sans-serif;
+  --background: oklch(0.99 0.01 80);
+  --foreground: oklch(0.25 0.07 60);
+  --secondaryBackground: oklch(0.95 0.03 80);
+  --muted-foreground: oklch(0.45 0.08 60);
+}
+html {
+  @apply scroll-smooth;
+  font-family: var(--font-geist-sans);
+}
+body {
+  @apply bg-background text-foreground antialiased;
 }
