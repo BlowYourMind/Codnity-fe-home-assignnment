@@ -1,10 +1,11 @@
 import { motion } from "motion/react";
+import TemporaryDrawer from "../material-ui/drawer";
 import Navbar from "./navbar";
 
 const Header = () => {
   return (
     <motion.header
-      className="bg-secondaryBackground shadow-sm fixed inset-x-0 top-4 z-40 mx-auto flex h-14 max-w-5xl items-center justify-between rounded-2xl px-8 saturate-100 backdrop-blur-[10px]"
+      className=" bg-secondaryBackground shadow-sm top-2 fixed inset-x-0 z-40 mx-auto flex h-14 max-w-5xl items-center justify-between rounded-2xl px-8 saturate-100 backdrop-blur-[10px]"
       initial={{
         y: -100,
       }}
@@ -25,6 +26,7 @@ const Header = () => {
         </a>
       </div>
       <Navbar />
+      <TemporaryDrawer />
     </motion.header>
   );
 };
