@@ -1,17 +1,27 @@
 import React from "react";
-
+const mainPhoto = `${process.env.PUBLIC_URL}/assets/mainPhoto.png`;
 const AboutContent: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-8 text-foreground">
       <h2 className="text-2xl font-bold mb-4 text-foreground">About Me</h2>
-
       <div className="mb-6 text-muted-foreground">
-        <p className="mb-4">
-          Based in Riga, Latvia, I am a frontend developer with a passion for
-          problem-solving and coding. I am committed to continuous learning and
-          staying updated with new technologies. My skills include effectively
-          self-managing independent projects and collaborating within a team.
-        </p>
+        <div className="flex gap-4">
+          <p className="mb-4">
+            Based in Riga, Latvia, I am a frontend developer with a passion for
+            problem-solving and coding. I am committed to continuous learning
+            and staying updated with new technologies. My skills include
+            effectively self-managing independent projects and collaborating
+            within a team.
+          </p>
+          <img
+            className="rounded-full min-h-[160px] min-w-[160px]"
+            alt="Maksims Nikitins photo"
+            src={mainPhoto}
+            width={160}
+            height={160}
+          />
+        </div>
+
         <h3 className="text-xl font-semibold mb-2 text-foreground">
           Professional Background
         </h3>
@@ -56,7 +66,6 @@ const AboutContent: React.FC = () => {
           am proficient in English, Latvian, and Russian.
         </p>
       </div>
-
       <div className="mt-8 pt-8 border-t border-muted-foreground text-muted-foreground">
         <h3 className="text-xl font-semibold mb-2 text-foreground">
           More about interests (Placeholder)
