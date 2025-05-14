@@ -26,11 +26,6 @@ export const HEADER_LINKS: HeaderLinks = [
     href: "/about",
     public_name: "About",
   },
-  {
-    icon: <Sms className="size-3.5" />,
-    href: "/contact-us",
-    public_name: "Contact us",
-  },
 ];
 export const FOOTER_LINKS: FooterLinks = [
   {
@@ -49,11 +44,6 @@ export const FOOTER_LINKS: FooterLinks = [
         href: "/about",
         public_name: "About",
         icon: <Book className="size-3.5" />,
-      },
-      {
-        href: "/contact-us",
-        public_name: "Contact Us",
-        icon: <Sms className="size-3.5" />,
       },
     ],
   },

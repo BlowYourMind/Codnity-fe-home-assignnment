@@ -5,7 +5,6 @@ import reportWebVitals from "./reportWebVitals";
 import Main from "./layout";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutContent from "./components/pages/aboutContent";
-import ContactUsContent from "./components/pages/contactUsContent";
 import CryptoContent from "./components/pages/cryptoContent";
 import MainPageContent from "./components/pages/mainPageContent";
 import { AnimationsProvider } from "./components/AnimationToggle";
@@ -21,7 +20,6 @@ root.render(
           <Routes>
             <Route path="/crypto" element={<CryptoContent />} />
             <Route path="/about" element={<AboutContent />} />
-            <Route path="/contact-us" element={<ContactUsContent />} />
 
             <Route path="/" element={<MainPageContent />} />
           </Routes>
