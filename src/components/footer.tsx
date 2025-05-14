@@ -10,7 +10,7 @@ const Footer = () => {
             className="mb-10 flex flex-col items-start gap-4 pr-4"
           >
             {list.links.map((link) => {
-              const { href, public_name } = link;
+              const { href, public_name, icon } = link;
 
               return (
                 <a
@@ -18,6 +18,7 @@ const Footer = () => {
                   href={href}
                   className="text-muted-foreground hover:text-foreground flex w-fit items-center gap-3 transition-colors"
                 >
+                  {icon}
                   {public_name}
                 </a>
               );

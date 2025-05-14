@@ -1,4 +1,3 @@
-import AnchorIcon from "@mui/icons-material/Anchor";
 import { FooterLinks, HeaderLinks } from "../interfaces/links";
 import {
   SITE_GITHUB_URL,
@@ -6,19 +5,29 @@ import {
   SITE_LINKEDIN_URL,
   SITE_TELEGRAM_URL,
 } from "../constants/contact";
+import {
+  Book,
+  CurrencyBitcoin,
+  GitHub,
+  Home,
+  Instagram,
+  LinkedIn,
+  Sms,
+  Telegram,
+} from "@mui/icons-material";
 export const HEADER_LINKS: HeaderLinks = [
   {
-    icon: <AnchorIcon className="size-3.5" />,
+    icon: <CurrencyBitcoin className="size-3.5" />,
     href: "/crypto",
     public_name: "Crypto",
   },
   {
-    icon: <AnchorIcon className="size-3.5" />,
+    icon: <Book className="size-3.5" />,
     href: "/about",
     public_name: "About",
   },
   {
-    icon: <AnchorIcon className="size-3.5" />,
+    icon: <Sms className="size-3.5" />,
     href: "/contact-us",
     public_name: "Contact us",
   },
@@ -29,22 +38,22 @@ export const FOOTER_LINKS: FooterLinks = [
       {
         href: "/",
         public_name: "Home",
-        icon: <AnchorIcon className="size-3.5" />,
+        icon: <Home className="size-3.5" />,
       },
       {
         href: "/crypto",
         public_name: "Crypto",
-        icon: <AnchorIcon className="size-3.5" />,
+        icon: <CurrencyBitcoin className="size-3.5" />,
       },
       {
         href: "/about",
         public_name: "About",
-        icon: <AnchorIcon className="size-3.5" />,
+        icon: <Book className="size-3.5" />,
       },
       {
         href: "/contact-us",
         public_name: "Contact Us",
-        icon: <AnchorIcon className="size-3.5" />,
+        icon: <Sms className="size-3.5" />,
       },
     ],
   },
@@ -53,23 +62,23 @@ export const FOOTER_LINKS: FooterLinks = [
       {
         href: SITE_TELEGRAM_URL,
         public_name: "Telegram",
-        icon: <AnchorIcon className="size-3.5" />,
+        icon: <Telegram className="size-3.5" />,
       },
       {
         href: SITE_INSTAGRAM_URL,
         public_name: "Instagram",
-        icon: <AnchorIcon className="size-3.5" />,
+        icon: <Instagram className="size-3.5" />,
       },
       {
         href: SITE_GITHUB_URL,
         public_name: "Github",
-        icon: <AnchorIcon className="size-3.5" />,
+        icon: <GitHub className="size-3.5" />,
       },
       {
         href: SITE_LINKEDIN_URL,
         public_name: "Linkedin",
-        icon: <AnchorIcon className="size-3.5" />,
+        icon: <LinkedIn className="size-3.5" />,
       },
     ],
   },
-]
+];
