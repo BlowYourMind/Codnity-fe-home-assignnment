@@ -19,7 +19,7 @@ export default function Main({
         height={550}
       />
       <Header />
-      <div className="max-w-5xl mx-auto h-screen pt-40">{children}</div>
+      <div className="max-w-5xl mx-auto pt-40">{children}</div>
       <Footer />
       <img
         className={`absolute -bottom-6 left-1/2 -z-10 -translate-x-1/2 ${

@@ -1,5 +1,9 @@
+import { useEffect } from "react";
+
 function MainPageContent() {
-  return <div>Main page content</div>;
+  useEffect(() => {}, []);
+
+  return <div>Home page</div>;
 }
 
 export default MainPageContent;
