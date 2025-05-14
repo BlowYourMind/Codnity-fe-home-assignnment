@@ -1,4 +1,5 @@
 import { useAnimations } from "./components/AnimationToggle";
+import Footer from "./components/footer";
 import Header from "./components/header";
 const upperBG = `${process.env.PUBLIC_URL}/assets/gradient-background-top.webp`;
 const lowerBG = `${process.env.PUBLIC_URL}/assets/gradient-background-bottom.webp`;
@@ -7,7 +8,7 @@ export default function Main({
 }: Readonly<{ children: React.ReactNode }>) {
   const { animationsEnabled } = useAnimations();
   return (
-    <div>
+    <div className="relative">
       <img
         className={`absolute left-1/2 top-0 -z-10 -translate-x-1/2 ${
           animationsEnabled ? "animate-pulse-opacity" : ""
@@ -18,8 +19,8 @@ export default function Main({
         height={550}
       />
       <Header />
-      <div className="mt-40 max-w-5xl mx-auto">{children}</div>
-      {/* <Footer /> */}
+      <div className="max-w-5xl mx-auto h-screen pt-40">{children}</div>
+      <Footer />
       <img
         className={`absolute -bottom-6 left-1/2 -z-10 -translate-x-1/2 ${
           animationsEnabled ? "animate-pulse-opacity" : ""

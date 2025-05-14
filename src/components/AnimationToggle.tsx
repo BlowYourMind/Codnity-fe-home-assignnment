@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import BlurOnIcon from "@mui/icons-material/BlurOn";
 import BlurOffIcon from "@mui/icons-material/BlurOff";
 import { createContext, useContext } from "react";
+import { cn } from "../utils/cn";
 
 export const AnimationsContext = createContext({
   animationsEnabled: true,
@@ -44,12 +45,12 @@ export const AnimationsProvider = ({ children }: any) => {
 
 export const useAnimations = () => useContext(AnimationsContext);
 
-const AnimationsToggle = () => {
+const AnimationsToggle = ({ className = "" }: { className?: string }) => {
   const { animationsEnabled, toggleAnimations } = useAnimations();
 
   return (
     <Button
-      className="size-9 p-0"
+      className={cn(className, `size-9 p-0`)}
       onClick={toggleAnimations}
       aria-label="Toggle animations"
     >

@@ -38,7 +38,7 @@ const Header = () => {
       </div>
       <Navbar />
       <TemporaryDrawer />
-      <AnimationsToggle />
+      <AnimationsToggle className="!hidden md:!block" />
     </motion.header>
   );
 };
