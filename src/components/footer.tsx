@@ -2,7 +2,7 @@ import { FOOTER_LINKS } from "../config/links";
 
 const Footer = () => {
   return (
-    <footer className="mt-20 bg-background/30 shadow-xs relative mx-auto mb-6 flex w-full max-w-5xl flex-col rounded-2xl p-8 saturate-100 backdrop-blur-[10px]">
+    <footer className="mt-20 bg-secondaryBackground shadow-xs relative mx-auto mb-6 flex w-full max-w-5xl flex-col rounded-2xl p-8 saturate-100 backdrop-blur-[10px]">
       <div className="mt-12 grid grid-cols-2 sm:grid-cols-3">
         {FOOTER_LINKS.map((list, index: number) => (
           <div
