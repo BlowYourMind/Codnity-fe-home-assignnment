@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { motion } from "motion/react";
 
 const mainPhoto = `${process.env.PUBLIC_URL}/assets/mainPhoto.png`;
 
@@ -7,7 +9,18 @@ const AboutContent: React.FC = () => {
     <div className="container mx-auto px-4 py-8 text-foreground">
       <h2 className="text-2xl font-bold mb-4 text-foreground">About Me</h2>
 
-      <div className="mb-6 text-muted-foreground">
+      <motion.div
+        initial={{
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 1,
+        }}
+        transition={{
+          duration: 0.3,
+        }}
+        className="mb-6 text-muted-foreground"
+      >
         <img
           className="rounded-full w-40 h-40 object-cover float-right ml-4 mb-4 md:ml-0 md:mb-0"
           alt="Maksims Nikitins photo"
@@ -57,9 +70,20 @@ const AboutContent: React.FC = () => {
           framework, having created and supported a cryptocurrency exchange bot.
           I am proficient in working with legacy projects built with HTML/JS.
         </p>
-      </div>
+      </motion.div>
 
-      <div className="mb-6 text-muted-foreground">
+      <motion.div
+        initial={{
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 1,
+        }}
+        transition={{
+          duration: 0.6,
+        }}
+        className="mb-6 text-muted-foreground"
+      >
         <h3 className="text-xl font-semibold mb-2 text-foreground">
           Skills & Languages
         </h3>
@@ -68,8 +92,20 @@ const AboutContent: React.FC = () => {
           Debugging and Problem Solving, and a High Sense of Responsibility. I
           am proficient in English, Latvian, and Russian.
         </p>
-      </div>
-      <div className="mb-6 text-muted-foreground">
+      </motion.div>
+
+      <motion.div
+        initial={{
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 1,
+        }}
+        transition={{
+          duration: 0.9,
+        }}
+        className="mb-6 text-muted-foreground"
+      >
         <h3 className="text-xl font-semibold mb-2 text-foreground">Links</h3>
         <p>
           You can find my work on{" "}
@@ -90,9 +126,20 @@ const AboutContent: React.FC = () => {
           </a>
           .
         </p>
-      </div>
+      </motion.div>
 
-      <div className="mt-8 pt-8 border-t border-muted-foreground text-muted-foreground">
+      <motion.div
+        initial={{
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 1,
+        }}
+        transition={{
+          duration: 1.2,
+        }}
+        className="mt-8 pt-8 border-t border-muted-foreground text-muted-foreground"
+      >
         <h3 className="text-xl font-semibold mb-2 text-foreground">
           More about interests (Placeholder)
         </h3>
@@ -113,7 +160,7 @@ const AboutContent: React.FC = () => {
           aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
           qui ratione voluptatem sequi nesciunt.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };
